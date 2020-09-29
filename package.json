@@ -1,0 +1,23 @@
+{
+  "name": "team-generator-command-line-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shahmir22/team-generator-command-line-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Shahmir22/team-generator-command-line-app/issues"
+  },
+  "homepage": "https://github.com/Shahmir22/team-generator-command-line-app#readme",
+  "dependencies": {
+    "inquirer": "^7.3.3",
+    "jest": "^26.4.2"
+  }
+}
