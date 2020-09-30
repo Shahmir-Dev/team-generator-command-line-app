@@ -40,9 +40,76 @@ const managerQuestions = [
     {
         type: 'input',
         name: 'office',
-        message: 'What is this managers office number? if you are the manager of this team, enter your office number'
+        message: 'What is this managers office number?'
     },
 ]
+//Engineer: 
+const engineerQuestions = [
+
+    {
+        type: 'input',
+        name: 'engiName',
+        message: 'Enter the name of this engineer'
+    },
+
+    {
+        type: 'input',
+        name: 'engiID',
+        message: 'Enter the ID number for this engineer'
+    },
+
+    {
+        type: 'input',
+        name: 'engiEmail',
+        message: 'Enter the email adress for this engineer'
+    },
+
+    {
+        type: 'input',
+        name: 'github',
+        message: 'Enter this engineers GitHub user name'
+    },
+]
+
+//Intern:
+const internQuestions = [
+
+    {
+        type: 'input',
+        name: 'internName',
+        message: 'Enter the name of this intern'
+    },
+
+    {
+        type: 'input',
+        name: 'internID',
+        message: 'Enter the ID number for this intern'
+    },
+
+    {
+        type: 'input',
+        name: 'internEmail',
+        message: 'Enter the email address for this intern'
+    },
+
+    {
+        type: 'input',
+        name: 'school',
+        message: 'What school does this intern attend? '
+    },
+]
+
+//question to promt user if they want to add another employee
+
+const addEmployee = [
+    {
+        type: 'list',
+        name: 'nextEmployee',
+        message: 'Select the type of team member you would like to add next',
+        choices: ['Engineer', 'Intern', 'Done']
+    }
+]
+// questions end
 
 // Write code to use inquirer to gather information about the development team members,
 // and to create objects for each team member (using the correct classes as blueprints!)
