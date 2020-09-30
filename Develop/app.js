@@ -109,8 +109,52 @@ const addEmployee = [
         choices: ['Engineer', 'Intern', 'Done']
     }
 ]
+
 // questions end
 
+//starting function - begins with manager because each team will always have a manager 
+function init() {
+    //starts with the manager function
+    managerPromt();
+}
+
+//function that will promt the user to select the next type of employee they are adding 
+function next() {
+    inquirer.prompt(addEmployee).then((response) => {
+
+        console.log(response);
+        switch (response.nextEmployee) {
+            case 'Engineer':
+                engineerPromt();
+                break;
+            case 'Intern':
+                internPromt();
+                break;
+            case 'Done':
+                console.log('Creating your team!')
+                makeTeam();
+        }
+    })
+}
+
+//function for the manager questions that will be called first when initiated
+function managerPromt() {
+    inquirer.prompt(managerQuestions).then((response) => {
+
+        let name = response.managerName;
+        let id = response.managerID;
+        let email = response.managerEmail;
+        let office = response.office;
+        // creats an object for this manager 
+        const manager = new Manager(name, id, email, office);
+        //pushes the new manager object to the empty array to be used later 
+        teamArray.push(manager);
+        //this will call the next function which will promt the user to select the next type of employee they are adding 
+        console.log(teamArray);
+
+        next();
+    })
+}
 // Write code to use inquirer to gather information about the development team members,
 // and to create objects for each team member (using the correct classes as blueprints!)
 
