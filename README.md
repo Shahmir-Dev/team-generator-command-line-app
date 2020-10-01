@@ -61,5 +61,5 @@ Shahmir Farooqui
 
 ## Tests
 
-To test open index.html In your IDE then choose option
+To test open team.html In your IDE then choose option
 open in default browser
