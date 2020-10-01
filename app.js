@@ -41,7 +41,7 @@ const managerQuestions = [
         type: 'input',
         name: 'office',
         message: 'What is this managers office number?'
-    },
+    }
 ]
 //Engineer: 
 const engineerQuestions = [
@@ -68,7 +68,7 @@ const engineerQuestions = [
         type: 'input',
         name: 'github',
         message: 'Enter this engineers GitHub user name'
-    },
+    }
 ]
 
 //Intern:
@@ -96,7 +96,7 @@ const internQuestions = [
         type: 'input',
         name: 'school',
         message: 'What school does this intern attend? '
-    },
+    }
 ]
 
 //question to promt user if they want to add another employee
