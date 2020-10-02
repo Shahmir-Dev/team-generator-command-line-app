@@ -178,11 +178,6 @@ function engineerPromt() {
 function internPromt() {
     inquirer.prompt(internQuestions).then((response) => {
 
-        let name = response.internName;
-        let id = response.internID;
-        let email = response.internEmail;
-        let school = response.school;
-
         const intern = new Intern(name, id, email, school);
 
         teamArray.push(intern);
